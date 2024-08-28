@@ -5,14 +5,75 @@
     box-sizing: border-box;
 }
 
+
 /*GENERAL*/
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 /*MAIN*/
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-carousel{
+    width: 80%;
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+
+#my-carousel .img-container{
+    height: 500px;
+}
+
+.img-container .slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img-container .slide > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container .slide > .text{
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.img-container .slide.active{
+    display: block;
+}
+
+
+#my-carousel .button-containers{
+    display: flex;
+    justify-content: space-between;
+}
+
+#my-carousel .button-containers > *{
+    margin: 0 10px;
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+
